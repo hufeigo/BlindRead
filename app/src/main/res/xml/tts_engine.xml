@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tts-engine xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/tts_service"
+    android:settingsActivity="com.hihi.ttsserver.ui.MainActivity"
+    android:icon="@drawable/ic_tts_24px"
+    android:description="@string/tts_service_desc"
+    android:version="1">
+    
+    <language android:name="zh" />
+    <language android:name="zho" />
+    <language android:name="zh-CN" />
+    <language android:name="zho-CN" />
+    
+</tts-engine> 

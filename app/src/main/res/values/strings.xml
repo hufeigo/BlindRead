@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TTS 配置列表相关字符串 -->
+    <string name="tts_config_1">TTS 配置 1</string>
+    <string name="tts_config_2">TTS 配置 2</string>
+    <string name="edit_tts_config">编辑 TTS 配置</string>
+    <string name="app_name">闭目听书</string>
+    <string name="tts_service">闭目听书</string>
+    <string name="tts_service_desc">闭目听书 - 优雅的听书工具</string>
+    <string name="tts_service_running">正在运行</string>
+    <string name="tts_state_idle">空闲</string>
+    <string name="tts_state_playing">正在朗读</string>
+    <string name="kill_process">结束进程</string>
+    <string name="cancel">取消</string>
+    <string name="stop">停止</string>
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+</resources>

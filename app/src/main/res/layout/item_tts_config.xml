@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- 第一行：启用开关、语音名称和旁白标签 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">            
+
+            <!-- 语音名称和角色名称 -->
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingStart="40dp"
+                tools:text="晓晓 (zh-CN-XiaoxiaoNeural)" />
+
+            <!-- 朗读范围标签 -->
+            <TextView
+                android:id="@+id/scopeTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/bg_tag"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorText"
+                android:singleLine="true"
+                android:ellipsize="end"
+                tools:text="旁白" />
+
+        </LinearLayout>
+
+        <!-- 第二行：风格和角色，语速、音量和音高 -->
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="0dp"
+            android:gravity="center_vertical">
+
+            <!-- 启用/禁用开关 -->
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="2dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"> <!-- 确保与CheckBox对齐 -->
+
+                <!-- 风格和角色-->
+                <TextView
+                    android:id="@+id/styleIntensityText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    tools:text="无-无 | 强度: 1.0" />
+
+                <!-- 语速、音量和音高 -->
+                <TextView
+                    android:id="@+id/rateVolumePitchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_marginTop="4dp"
+                    tools:text="语速:0 | 音量:0 | 音高:0" />
+
+            </LinearLayout>
+
+            <!-- 编辑按钮 -->
+            <ImageButton
+                android:id="@+id/editButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="0dp"
+                android:src="@drawable/ic_edit_24px"
+                app:tint="@color/colorSecondary"
+                android:contentDescription="编辑" />
+
+            <!-- 删除按钮 -->
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="0dp"
+                android:layout_marginEnd="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_delete_24px"
+                app:tint="@color/colorSecondary"
+                android:contentDescription="删除" />
+
+        </LinearLayout>
+
+        <!-- 第三行：音频格式、API名称和操作按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="40dp"> <!-- 确保与CheckBox对齐 -->
+
+            <!-- 音频格式 -->
+            <TextView
+                android:id="@+id/audioFormatText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                tools:text="audio-16khz-32kbitrate-mono-mp3" />
+
+            <!-- API名称 -->
+            <TextView
+                android:id="@+id/apiNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="4dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorText"
+                android:singleLine="true"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Azure" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView> 
