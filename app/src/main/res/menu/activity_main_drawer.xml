@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tts_config"
+            android:icon="@drawable/ic_tts_24px"
+            android:tint="@color/colorOnPrimary"
+            android:title="系统TTS配置" />
+        <item
+            android:id="@+id/nav_app_settings"
+            android:icon="@drawable/ic_settings_24px"
+            android:title="应用配置" />
+        <item
+            android:id="@+id/nav_battery"
+            android:icon="@drawable/ic_battery_24px"
+            android:title="电池优化白名单" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_log"
+            android:icon="@drawable/ic_menu_log"
+            android:title="运行日志" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/ic_update_24px"
+            android:title="检查更新" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_24px"
+            android:title="关于" />
+    </group>
+
+</menu> 

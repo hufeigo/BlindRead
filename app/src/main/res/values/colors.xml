@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2aa198</color>
+    <color name="colorPrimaryVariant">#004E5C</color>
+    <color name="colorOnPrimary">#002b36</color>
+    <color name="colorPrimaryContainer">#eee8d5</color>
+    <color name="colorOnPrimaryContainer">#586e75</color>
+    <color name="colorSecondary">#4B6269</color>
+    <color name="colorSecondaryVariant">#334A51</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="dark_gray">#424242</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="colorIconTint">#002b36</color>
+    <color name="colorText">#586e75</color>
+    
+    <!-- 朗读范围标签颜色 - 白天模式 -->
+    <color name="colorize_scope_all_bg">#2aa198</color>
+    <color name="colorize_scope_narrator_bg">#cb4b16</color>
+    <color name="colorize_scope_dialogue_bg">#268bd2</color>
+    <color name="colorize_scope_default_text">#FFFFFF</color>
+</resources> 
